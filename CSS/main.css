@@ -1,0 +1,956 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom right, white, #c3baba);
+}
+/*------------- Header ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+.Name {
+  position: relative;
+  right: 5%;
+  bottom: 60%;
+}
+#TopBar {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: flex-end;
+  display: flex;
+  background: linear-gradient(to bottom right, white, grey);
+  background-image: url(../images/pexels-suzy-hazelwood-3928938.jpg);
+  background-size: cover;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: right;
+  position: relative;
+  top: 10vh;
+  left: 40vw;
+  max-height: 75px;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu a {
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.9em;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  will-change: transform;
+  font-size: 1.05rem;
+  box-shadow: -1px 5px 5px 1px rgb(0 0 0 / 90%);
+}
+
+/*--------------- Présentation ----------------- */
+.containers {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, white, #c3baba);
+}
+.column1 {
+  width: 20%;
+  padding: 4px;
+
+  background-color: #261e1e;
+}
+.column2 {
+  padding: 4px;
+  width: 100%;
+  background: linear-gradient(to bottom right, white, #c3baba);
+}
+.column2 > h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+.Introduction {
+  display: flex;
+  border: 1px solid rgb(252, 253, 252);
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(173, 173, 173),
+    rgb(109, 108, 108)
+  );
+}
+.Texte {
+  padding: 8px;
+}
+.Photo {
+  display: flex;
+  width: 35%;
+  height: 27%;
+  border: 1px solid white;
+  position: relative;
+  left: 28%;
+  margin-top: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  justify-content: center;
+}
+.socials {
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  align-items: center;
+}
+.socials i {
+  position: relative;
+  top: 10%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  border: 1px solid white;
+}
+.socials a {
+  position: relative;
+  right: 1%;
+  display: block;
+  min-width: 140px;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.4em 0;
+
+  border-radius: 25px;
+  background-color: #333;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  color: #fff;
+  bottom: 5%;
+  text-decoration: none;
+}
+.fa-facebook {
+  color: #1877f2;
+  border-radius: 40px;
+  background-color: white;
+}
+.fa-twitter {
+  color: #1da1f2;
+  border-radius: 40px;
+  background-color: white;
+}
+.fa-tumblr {
+  color: #35465c;
+  border-radius: 4px;
+  background-color: white;
+}
+/*--------------- Articles --------------------- */
+.Articlecontainer > tinymce-editor {
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 10em;
+  margin: auto;
+}
+.Articlecontainer > .tox-tinymce {
+  border: solid 2px #261e1e;
+}
+
+.checkMessage {
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  background: linear-gradient(to bottom right, white, #c3baba);
+  max-width: 250px;
+  max-height: 60px;
+  left: 50%;
+  border: #261e1e inset 2px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.checkMessage i {
+  position: relative;
+  right: 2%;
+  margin: auto;
+  border: solid 2px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.checkMessage .fa-check {
+  color: green;
+}
+.checkMessage .fa-xmark {
+  color: red;
+}
+.ArticleBody {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  background: linear-gradient(to bottom right, white, #c3baba);
+}
+.MainArticle {
+  position: relative;
+  display: flex;
+  bottom: 27%;
+  border: solid 2px white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.ArticleList {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background: linear-gradient(to bottom right, white, #afafaf);
+}
+
+.Articles {
+  display: flex;
+  margin-left: 20px;
+  width: 95%;
+  height: 15%;
+  align-items: center;
+  background: linear-gradient(to bottom right, white, #c3baba);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.Articles a {
+  text-decoration: none;
+}
+
+.ArticleImg {
+  display: flex;
+  border: 1px solid blue;
+  width: 15%;
+  height: 70%;
+  margin-left: 15px;
+}
+.ArticleDescription {
+  display: flex;
+  flex-direction: column;
+  margin: inherit;
+  padding-right: 3px;
+  max-width: 100%;
+  width: 100%;
+}
+.ArticleDescription > h2 {
+  margin: auto;
+  font-size: 1.2em;
+}
+.ArticleImage {
+  border: solid red 2px;
+  min-width: 20%;
+  height: 40%;
+  display: flex;
+  position: relative;
+  float: left;
+  margin: 0 15px 0 0;
+}
+.MainArticleText {
+  margin: 5px;
+}
+
+.MainArticleText > p {
+  margin: 15px;
+}
+/* ----------- Formulaire ----------- */
+.Formulaire {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, white, grey);
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.Formulaire > .checkMessage {
+  left: 0%;
+  bottom: 5vw;
+}
+.LoginForm {
+  padding-bottom: 100px;
+  padding-top: 70px;
+}
+.Formulaire form {
+  border: 3px solid #f1f1f1;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.Formulaire input[type="email"],
+.Formulaire input[type="password"] {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+form button {
+  background-color: #1877f2;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  cursor: grabbing;
+  width: 100%;
+}
+form h1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.formcontainer {
+  text-align: left;
+  margin: 24px 50px 12px;
+}
+.container {
+  padding: 16px 0;
+  text-align: left;
+}
+.container-bottom {
+  background-color: #eee;
+  padding: 16px 0;
+  text-align: left;
+}
+.container-bottom label {
+  padding-left: 15px;
+}
+span.psw {
+  float: right;
+  padding-top: 0;
+  padding-right: 15px;
+}
+span.admin {
+  position: relative;
+  left: 35%;
+}
+/* ------------- Admin ------------------- */
+.admincolumn1 {
+  background-color: #261e1e;
+  width: 20%;
+  padding: 4px;
+  max-height: 100%;
+  border-right: solid 20px #261e1e;
+  border-top: solid 10px #261e1e;
+  border-bottom: solid 10px #261e1e;
+
+  display: flex;
+  flex-direction: column;
+}
+.admincolumn2 {
+  width: 100%;
+}
+
+.AdminHeader {
+  max-height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: inset white 2px;
+  background: linear-gradient(to bottom right, white, grey);
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+
+  position: relative;
+  right: -1%;
+}
+
+.AdminMenu {
+  justify-content: center;
+  display: flex;
+  border: rgba(252, 253, 252, 0.911) solid 3px;
+  margin-top: 15px;
+  height: 75%;
+  border-style: inset;
+  align-items: center;
+}
+
+.AdminMenu li {
+  margin: 85px 0;
+  list-style-type: none;
+}
+
+.AdminMenu ul {
+  padding: 0px;
+}
+
+.AdminMenu a {
+  display: block;
+  min-width: 200px;
+  top: -50px;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.4em 0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  min-height: 4%;
+}
+.Button > a {
+  display: block;
+  max-width: 300px;
+  left: 55%;
+  bottom: 21%;
+  text-align: center;
+  margin: 0.4em;
+  padding: 0.5em 2em;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+
+.Button input[type="submit"] {
+  min-width: 200px;
+  margin: 0.3em;
+  padding: 0.8em 0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+  position: relative;
+  top: 35%;
+}
+
+.Edit {
+  position: relative;
+  left: 90%;
+  width: 120px;
+  height: 100%;
+}
+.Edit > a {
+  position: relative;
+  right: 110%;
+  top: -5px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  margin: 0.4em;
+  padding: 6px 25px 6px 25px;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgb(10 10 10 / 70%);
+}
+
+/* ------------- Articles (Publication) ----------- */
+.Redaction {
+  min-height: 60%;
+  height: 60%;
+}
+.NewArticle {
+  margin: auto;
+  height: 70vh;
+  border: #261e1e inset 2px;
+  background: linear-gradient(to bottom right, white, #c3baba);
+  margin: 100px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.NewArticle h2 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+.NewArticle button {
+  top: 35%;
+  background-color: #1877f2;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  left: 42%;
+  cursor: pointer;
+  position: relative;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+#editbutton {
+  top: auto;
+  background-color: #1877f2;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  left: 42%;
+  cursor: pointer;
+  position: relative;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+.NewArticle textarea {
+  border-radius: 7px;
+}
+
+.Articlecontainer {
+  display: flex;
+  flex-direction: column;
+}
+.Articlecontainer label {
+  font-size: larger;
+  padding-left: 5px;
+  margin: auto;
+}
+.Articlecontainer input[type="text"] {
+  width: 40%;
+  border-radius: 7px;
+  padding: 7px;
+  margin: auto;
+}
+#date {
+  width: 15%;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+/* --------------- Commentaires ----------------- */
+
+.Signalement {
+  max-width: 10%;
+  position: relative;
+  bottom: 31%;
+  color: red;
+}
+.CommentForm {
+  display: flex;
+  min-width: 100%;
+  min-height: 32%;
+  border: solid 2px white;
+  background: linear-gradient(to bottom right, white, #c3baba);
+}
+.Commentcontainer {
+  display: flex;
+  flex-direction: column;
+}
+.Commentcontainer label {
+  font-size: larger;
+  padding-left: 5px;
+  margin: auto;
+}
+.Commentcontainer input[type="text"] {
+  width: 40%;
+  border-radius: 7px;
+  padding: 7px;
+  margin: auto;
+}
+.CommentContainer > .tox-tinymce {
+  height: 200px;
+}
+
+.NewComment {
+  width: 100%;
+  border: white inset 5px;
+}
+.NewComment h2 {
+  text-align: center;
+  font-size: larger;
+  font-family: sans-serif;
+}
+.NewComment input[type="text"] {
+  width: 25%;
+  padding: 5px;
+  margin: auto;
+}
+.NewComment button {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  width: 20%;
+  left: 42%;
+  cursor: pointer;
+  position: relative;
+  margin-top: 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+.NewComment textarea {
+  border-radius: 7px;
+  margin: 5px;
+  padding: 10px;
+}
+.Delete {
+  position: relative;
+  left: 90%;
+  width: 120px;
+  height: 100%;
+}
+
+.Delete > a {
+  position: relative;
+  right: 25%;
+  top: -23px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  margin: 0.4em;
+  padding: 6px 15px 6px 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgb(10 10 10 / 70%);
+}
+
+.CommentList {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: linear-gradient(to bottom right, white, grey);
+  padding: 4px;
+  border: solid rgb(255, 252, 252) 5px;
+  border-style: inset;
+}
+
+.CommentDescription {
+  display: flex;
+  flex-direction: column;
+  margin: inherit;
+  padding-right: 3px;
+  max-width: 100%;
+  width: 100%;
+}
+.CommentDescription h1 {
+  margin-top: 15px;
+  font-size: larger;
+}
+.CommentDescription :is(h1, h2, h3) {
+  margin: 0px;
+}
+.CommentDescription h2 {
+  font-size: large;
+}
+.CommentDescription p {
+  border: solid;
+  border-style: inset;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 2px;
+}
+.Commentaires {
+  display: flex;
+  border: 1px solid rgb(10, 10, 10);
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 95%;
+  height: 15%;
+  align-items: center;
+  background: linear-gradient(to bottom right, white, #c3baba);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.CommentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  overflow: auto;
+}
+.ArticleCommentaires {
+  position: relative;
+  left: 2%;
+  top: 0%;
+  display: flex;
+  border: 1px solid rgb(10, 10, 10);
+  margin: 15px;
+  width: 95%;
+
+  align-items: center;
+  background: linear-gradient(to bottom right, white, #c3baba);
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.CommentList h4 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.Signal > a {
+  position: absolute;
+  right: 3%;
+  top: 0px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  margin: 0.4em;
+  padding: 0.4em;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 5px 5px 5px rgb(10 10 10 / 70%);
+}
+.AddComment {
+  position: relative;
+  display: block;
+  max-width: 250px;
+  left: 40%;
+  bottom: 21%;
+  text-align: center;
+  margin: 0.6em;
+  padding: 0.5em 2em;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.7);
+}
+
+/* ------------ Hover -------------- */
+
+.menu a:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: -1px -1px 10px 3px rgb(0 0 0 / 90%) inset;
+  transform: scale(1);
+  transition-duration: 0.6s;
+}
+.Articles:hover {
+  transition: all 0.5s ease-out;
+  background: linear-gradient(to bottom right, rgb(168, 164, 164), #261e1e);
+  color: rgb(245, 241, 241);
+  box-shadow: -1px 4px 10px 4px rgba(0, 0, 0, 0.7);
+}
+form button:hover {
+  opacity: 0.8;
+  background-color: #00ff29;
+  color: #043069;
+}
+
+.socials a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.Articles a:hover {
+  color: #fff;
+}
+
+.AdminMenu a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.admincolumn1 button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.Edit a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.NewArticle button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.Delete a:hover {
+  background-color: #fff;
+  color: #333;
+}
+.Commentaires:hover {
+  transition: all 0.5s ease-out;
+  background: linear-gradient(to bottom right, rgb(168, 164, 164), #261e1e);
+  color: rgb(245, 241, 241);
+}
+
+.NewComment button:hover {
+  background-color: #fff;
+  color: #333;
+}
+.AddComment:hover {
+  background-color: #fff;
+  color: #333;
+}
+.ShowComment:hover {
+  background-color: #fff;
+  color: #333;
+}
+.Button > a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/*------------- Media Queries ------------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .Name {
+    display: flex;
+    position: relative;
+
+    bottom: 33%;
+    right: 16%;
+  }
+  img[alt="BannerName"] {
+    animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .AdminMenu a {
+    min-width: 180px;
+  }
+  .menu {
+    right: 15%;
+    left: unset;
+    top: unset;
+  }
+
+  .Signal > a {
+    left: 65%;
+    min-width: 150px;
+  }
+  .ArticleCommentaires {
+    right: unset;
+  }
+  .Edit {
+    left: 35%;
+    top: 15px;
+  }
+  .Delete {
+    left: 70%;
+    top: 15px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1120px) {
+  .menu {
+    left: unset;
+    top: 15%;
+    right: 25%;
+  }
+  #TopBar {
+    flex-direction: unset;
+  }
+  .Name {
+    bottom: 15%;
+    right: -3%;
+  }
+  .AdminMenu > a {
+    min-width: 125px;
+  }
+}
+/* @media only screen and (min-width: 1000px) and (max-width: 1120px) {
+  .menu {
+    left: 25%;
+    top: unset;
+    right: unset;
+  }
+} */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .Name {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin: auto;
+    top: -10%;
+    left: unset;
+  }
+  .containers {
+    flex-direction: column-reverse;
+  }
+  .column1 {
+    width: unset;
+  }
+  .admincolumn1 {
+    width: unset;
+  }
+  .Articles {
+    margin: auto;
+    margin-bottom: 7px;
+  }
+
+  .AddComment {
+    margin: auto;
+    margin-top: 7px;
+    left: unset;
+  }
+  .ArticleCommentaires {
+    left: unset;
+    top: unset;
+    right: 2%;
+  }
+  .Signal > a {
+    position: relative;
+    top: unset;
+    bottom: 20px;
+    left: 75%;
+    width: 100px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+  }
+  .Edit {
+    left: 45%;
+    top: 15px;
+  }
+  .Delete {
+    left: 70%;
+    top: 15px;
+  }
+}
+.NewArticle {
+  margin: auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .Signal > a {
+    left: 60%;
+    bottom: 5px;
+  }
+  .Commentaires {
+    margin-left: 5px;
+  }
+}
