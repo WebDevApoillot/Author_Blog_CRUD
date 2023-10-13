@@ -12,7 +12,7 @@ class model
     {
         try {
             $this->db = new PDO(
-                'mysql:host=db5014646402.hosting-data.io;dbname=blog_forteroche;charset=utf8',
+                'mysql:host=db5014646402.hosting-data.io;dbname=dbs12170899;charset=utf8',
                 'dbu3276867',
                 'AdminTestPass971!'
 
