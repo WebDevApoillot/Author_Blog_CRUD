@@ -12,8 +12,9 @@ class model
     {
         try {
             $this->db = new PDO(
-                'mysql:host=localhost;dbname=blog_forteroche;charset=utf8',
-                'root',
+                'mysql:host=db5014646402.hosting-data.io;dbname=blog_forteroche;charset=utf8',
+                'dbu3276867',
+                'AdminTestPass971!'
 
             );
         } catch (Exception $e) {
