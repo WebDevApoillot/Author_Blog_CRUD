@@ -12,7 +12,7 @@ function add_comment()
 
 function store_comment()
 {
-    var_dump($_POST);
+   
 
 
     if (isset($_POST) && !empty($_POST)) {

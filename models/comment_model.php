@@ -14,7 +14,7 @@ class comment_model extends model
             $query = "INSERT INTO commentaires(auteur,message,date,posts_id) VALUES(?,?,?,?)";
             $request = $this->db->prepare($query);
             $request->execute([$commentAuthor, $commentText, $commentDate, $postID]);
-            var_dump($request);
+            
             //véfirer l'insertion et renvoyer true
             if ($request->rowCount() == 1) {
                 return true;
